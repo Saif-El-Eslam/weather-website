@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Weather App</title>
+
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+
+            <form action="/" method="GET">
+                <input type="text" name="address" placeholder="Enter address">
+                <button>Search</button>
+            </form>
+
+            <p id="first-message"></p>
+            <p id="second-message"></p>
+        </div>
+    
+        {{>footer}}
+
+
+        <script src="/js/app.js"></script>
+    </body>
+</html>
